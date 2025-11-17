@@ -1,4 +1,4 @@
-# Hệ Thống Spring Boot với Kafka Cluster
+# Hệ Thống Spring Boot với Kafka Cluster (Kết quả chạy được báo cáo trong TEST_REPORT.md)
 
 Dự án này triển khai 2 ứng dụng Spring Boot trao đổi dữ liệu JSON thông qua Kafka Cluster gồm 3 nodes, có khả năng failover tự động khi leader node bị dừng.
 
@@ -26,10 +26,10 @@ Dự án này triển khai 2 ứng dụng Spring Boot trao đổi dữ liệu JS
            ↓
 ┌──────────────────────────────────────────┐
 │         Kafka Cluster (3 Nodes)          │
-│  ┌─────────┐ ┌─────────┐ ┌─────────┐   │
-│  │ Kafka-1 │ │ Kafka-2 │ │ Kafka-3 │   │
-│  │  :9092  │ │  :9093  │ │  :9094  │   │
-│  └─────────┘ └─────────┘ └─────────┘   │
+│  ┌─────────┐ ┌─────────┐ ┌─────────┐     │
+│  │ Kafka-1 │ │ Kafka-2 │ │ Kafka-3 │     │
+│  │  :9092  │ │  :9093  │ │  :9094  │     │
+│  └─────────┘ └─────────┘ └─────────┘     │
 │         Leader Election & Replication    │
 └──────────────────────────────────────────┘
            │
